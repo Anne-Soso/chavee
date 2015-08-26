@@ -1,9 +1,9 @@
 {
     "name": "Chavee",
-    "version": "0.1.0",
+    "version": "0.0.0",
     "private": true,
     "author": {
-        "name": "Anne-Sophie Pirlet",
+        "name": "Anne-Sophie"
     },
     "devDependencies": {
         "grunt": "^0.4.5",
@@ -13,5 +13,5 @@
         "grunt-contrib-watch": "^0.6.1"
     },
     "dependencies": {},
-    "description": "Maquette du projet de l'élevage de la Chavée"
+    "description": "project description"
 }
