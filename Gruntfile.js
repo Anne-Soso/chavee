@@ -30,14 +30,13 @@ module.exports = function( grunt ) {
 				}
 			}
 		},
-		sass: {                              // Nom de la tâche
-			dist: {                            // Nom de la sous-tâche
-				options: {                       // Options
-					style: 'expanded'
+		"sass": {                              // Nom de la tâche
+			"styles": {                            // Nom de la sous-tâche
+				"options": {                       // Options
+					"style": "expanded"
 				},
-				files: {                         // Liste des fichiers
-					'main.css': 'main.scss',       // 'destination': 'source'
-					'widgets.css': 'widgets.scss'
+				"files": {                         // Liste des fichiers
+					"bin/css/main.css": "src/sass/main.scss"
 				}
 			}
 		},
@@ -50,8 +49,8 @@ module.exports = function( grunt ) {
 		},
 		"watch": {
 			"styles": {
-				"files": [ "src/styl/**/*.styl" ],
-				"tasks": [ "stylus:styles", "notify_hooks" ]
+				"files": [ "src/sass/**/*.scss" ],
+				"tasks": [ "sass:styles", "notify_hooks" ]
 			},
 			"html": {
 				"files": [ "src/jade/**/*.jade" ],
