@@ -6,6 +6,7 @@ module.exports = function( grunt ) {
 	grunt.loadNpmTasks( "grunt-contrib-uglify" );
 	grunt.loadNpmTasks( "grunt-notify" );
 	grunt.loadNpmTasks( "grunt-contrib-watch" );
+	grunt.loadNpmTasks('grunt-contrib-sass');
 
 
 	grunt.initConfig( {
@@ -26,6 +27,17 @@ module.exports = function( grunt ) {
 			"scripts": {
 				"files": {
 					"bin/js/script-min.js": "src/js/script.js"
+				}
+			}
+		},
+		sass: {                              // Nom de la tâche
+			dist: {                            // Nom de la sous-tâche
+				options: {                       // Options
+					style: 'expanded'
+				},
+				files: {                         // Liste des fichiers
+					'main.css': 'main.scss',       // 'destination': 'source'
+					'widgets.css': 'widgets.scss'
 				}
 			}
 		},
@@ -54,7 +66,7 @@ module.exports = function( grunt ) {
 
 	grunt.registerTask( "work", [
 		"jade",
-		"stylus",
+		"sass",
 		"uglify",
 		"notify_hooks",
 		"watch"
