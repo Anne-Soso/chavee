@@ -1,2 +1,16 @@
+h1.hidden-title Accueil de l'élevage de la Chavée
 header.page-head.page-head--index
-  video(src="img/chavee-video.mp4" autoplay loop).header__video
+  h2(role="heading" aria-level="2").hidden-title Inscription à la Newsletter
+  form(method="post" action="#").form-newsletter
+    label(for="email").form-newsletter__label Inscription à la Newsletter
+    input(type="email" name="email" id="email").form-newsletter__text
+    input(type="submit").form-newsletter__submit
+  video(src="img/chavee-video.mp4" autoplay loop).page-head__video
+  a(href="#")
+    img(src="img/logo.png" alt="La Chavée, élevage équin").page-head__logo
+nav.accueil-nav
+  h2(role="heading" aria-level="2").hidden-title Navigation du Site
+  a(href="chevaux.html").accueil-nav__link Chevaux
+  a(href="a-propos.html").accueil-nav__link A propos
+  a(href="contact.html").accueil-nav__link Contact
+  

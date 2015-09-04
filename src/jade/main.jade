@@ -1,5 +1,14 @@
 //-main.jade
 extends includes/layout.jade
-
+block title
+  title Accueil - Elevage de la Chavée 
 block header
   include includes/header-accueil.jade
+block content
+  div.wrapper
+    section.news
+      h2.heading Actualités de l'élevage
+      article 
+        h3(role="heading" aria-level="2").news-title Ouverture du site
+        
+      

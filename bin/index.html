@@ -3,12 +3,30 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Elevage de la Chavee</title>
+    <title>Accueil - Elevage de la Chavée </title>
     <link href="css/main.css">
   </head>
   <body>
+    <h1 class="hidden-title">Accueil de l'élevage de la Chavée</h1>
     <header class="page-head page-head--index">
-      <video src="img/chavee-video.mp4" autoplay loop class="header__video"></video>
+      <h2 role="heading" aria-level="2" class="hidden-title">Inscription à la Newsletter</h2>
+      <form method="post" action="#" class="form-newsletter">
+        <label for="email" class="form-newsletter__label">Inscription à la Newsletter</label>
+        <input type="email" name="email" id="email" class="form-newsletter__text">
+        <input type="submit" class="form-newsletter__submit">
+      </form>
+      <video src="img/chavee-video.mp4" autoplay loop class="page-head__video"></video><a href="#"><img src="img/logo.png" alt="La Chavée, élevage équin" class="page-head__logo"></a>
     </header>
+    <nav class="accueil-nav">
+      <h2 role="heading" aria-level="2" class="hidden-title">Navigation du Site</h2><a href="chevaux.html" class="accueil-nav__link">Chevaux</a><a href="a-propos.html" class="accueil-nav__link">A propos</a><a href="contact.html" class="accueil-nav__link">Contact</a>
+    </nav>
+    <div class="wrapper">
+      <section class="news">
+        <h2 class="heading">Actualités de l'élevage</h2>
+        <article> 
+          <h3 role="heading" aria-level="2" class="news-title">Ouverture du site</h3>
+        </article>
+      </section>
+    </div>
   </body>
 </html>
