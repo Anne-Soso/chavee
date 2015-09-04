@@ -456,8 +456,10 @@ html {
   box-sizing: inherit;
 }
 
-h1 {
+h2 {
   color: #633c42;
+  font-size: 32px;
+  font-size: 2rem;
 }
 
 .hidden-title {

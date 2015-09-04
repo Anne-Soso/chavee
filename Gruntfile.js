@@ -6,7 +6,7 @@ module.exports = function( grunt ) {
 	grunt.loadNpmTasks( "grunt-contrib-uglify" );
 	grunt.loadNpmTasks( "grunt-notify" );
 	grunt.loadNpmTasks( "grunt-contrib-watch" );
-	grunt.loadNpmTasks('grunt-contrib-sass');
+	grunt.loadNpmTasks( "grunt-contrib-sass" );
 
 
 	grunt.initConfig( {
@@ -33,7 +33,8 @@ module.exports = function( grunt ) {
 		"sass": {                              // Nom de la tâche
 			"styles": {                            // Nom de la sous-tâche
 				"options": {                       // Options
-					"style": "expanded"
+					"style": "expanded",
+					"loadPath": require('node-bourbon').includePaths
 				},
 				"files": {                         // Liste des fichiers
 					"bin/css/main.css": "src/sass/main.scss"

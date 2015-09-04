@@ -1,3 +1,4 @@
-h1{
+h2{
   color : $heading-color;
+  @include rem-fallback(font-size, 2);
 }
