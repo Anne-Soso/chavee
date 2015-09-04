@@ -456,6 +456,13 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 22.4px;
+  line-height: 1.4rem;
+}
+
 h2 {
   color: #633c42;
   font-size: 32px;
