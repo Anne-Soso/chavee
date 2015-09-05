@@ -1,0 +1,17 @@
+.button{
+  background:none;
+  border:1px solid;
+  padding:10px 30px;
+  color:$background-color;
+  border-radius:4px;
+  @include transition(all 0.7s ease-in-out);
+  &:hover{
+    background: $background-color;
+    border-color: $background-color;
+    color:white;
+  }
+}
+.button--white{
+  color:$text-color-bkgr;
+  border-color:$text-color-bkgr;
+}

@@ -467,9 +467,36 @@ body {
 }
 
 h2 {
-  color: #633c42;
+  color: #857955;
   font-size: 32px;
   font-size: 2rem;
+}
+
+.button {
+  background: none;
+  border: 1px solid;
+  padding: 10px 30px;
+  color: #3f312e;
+  border-radius: 4px;
+  -webkit-transition: all 0.7s ease-in-out;
+  -moz-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+}
+.button:hover {
+  background: #3f312e;
+  border-color: #3f312e;
+  color: white;
+}
+
+.button--white {
+  color: white;
+  border-color: white;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .header-accueil {
@@ -516,13 +543,13 @@ h2 {
 }
 
 .form-newsletter__submit {
-  background: none;
-  border: 1px solid white;
-  padding: 10px 30px;
-  border-radius: 4px;
   font-size: 19.2px;
   font-size: 1.2rem;
-  color: white;
+}
+
+.accueil-nav__link {
+  float: left;
+  width: 33,3333%;
 }
 
 .hidden-title {
