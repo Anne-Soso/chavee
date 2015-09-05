@@ -505,6 +505,7 @@ h2 {
 
 .header-accueil__video {
   width: 100%;
+  display: block;
 }
 
 .header-accueil__logo {
@@ -548,8 +549,37 @@ h2 {
 }
 
 .accueil-nav__link {
+  display: block;
   float: left;
-  width: 33,3333%;
+  text-align: center;
+  color: white;
+  font-size: 48px;
+  font-size: 3rem;
+  padding: 100px;
+  width: 33.3333%;
+  height: 230px;
+  text-decoration: none;
+  background-color: #3f312e;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  background-size: cover;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.accueil-nav__link:hover {
+  box-shadow: 0px 20px 100px rgba(0, 0, 0, 0.6) inset;
+}
+
+.accueil-nav__link--chevaux {
+  background-image: url("img/nav3.jpg");
+}
+
+.accueil-nav__link--about {
+  background-image: url("img/nav2.jpg");
+}
+
+.accueil-nav__link--contact {
+  background-image: url("img/nav1.jpg");
 }
 
 .hidden-title {

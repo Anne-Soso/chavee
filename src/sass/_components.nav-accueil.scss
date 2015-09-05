@@ -1,6 +1,29 @@
-
 .accueil-nav__link{
-  float:left;
-  width:33,3333%;
+  display:block;
+  float: left;
+  text-align: center;
+  color: $button-text-color;
+  @include rem-fallback(font-size,3);
+  padding: 100px;
+  width: 33.3333%;
+  height:230px;
+  text-decoration:none;
+  background-color: $background-color;
+  text-shadow:1px 1px 1px rgba(0,0,0,0.2);
+  background-size:cover;
+  @include transition(all 0.4s ease-in-out);
+  &:hover{
+    box-shadow:0px 20px 100px rgba(0,0,0,0.6) inset;
+  }
+}
 
+.accueil-nav__link--chevaux{
+  background-image: url('img/nav3.jpg');
+
+}
+.accueil-nav__link--about{
+  background-image: url('img/nav2.jpg');
+}
+.accueil-nav__link--contact{
+  background-image: url('img/nav1.jpg');
 }
