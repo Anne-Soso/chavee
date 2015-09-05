@@ -1,0 +1,40 @@
+.header-accueil{
+  position:relative;
+}
+.header-accueil__video{
+  width:100%;
+}
+.header-accueil__logo{
+  top:20%;
+  @include center-absolute(300px);
+}
+
+.form-newsletter{
+  position:absolute;
+  width:100%;
+  text-align:center;
+  bottom:20%;
+}
+.form-newsletter__label{
+  color:$text-color-bkgr;
+  @include rem-fallback(font-size, 1.2);
+  @include rem-fallback(margin-right, 0.6);
+}
+.form-newsletter__text{
+  background:none;
+  color:$text-color-bkgr;
+  @include rem-fallback(font-size, 1.2);
+  @include rem-fallback(margin-right, 1);
+  padding:10px 0;
+  border-bottom:1px solid $text-color-bkgr;
+  border-width:0 0 1px 0;
+}
+.form-newsletter__submit{
+  background:none;
+  border:1px solid $text-color-bkgr;
+  padding:10px 30px;
+  border-radius:4px;
+  @include rem-fallback(font-size, 1.2);
+  color:$text-color-bkgr;
+
+}

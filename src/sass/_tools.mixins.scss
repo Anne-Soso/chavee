@@ -32,3 +32,13 @@
       -ms-border-radius: $radius;
           border-radius: $radius;
 }
+
+@mixin center-absolute($width){
+  $n-width: strip-unit($width);
+  $margin: halve($n-width);
+  position:absolute;
+  left:50%;
+  width:$width;
+  margin-left:-#{$margin}px;
+
+}

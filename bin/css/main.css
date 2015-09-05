@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,300italic,400italic,500,500italic,700,700italic,100italic);
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Set default font family to sans-serif.
@@ -461,12 +462,67 @@ body {
   font-size: 1rem;
   line-height: 22.4px;
   line-height: 1.4rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
 }
 
 h2 {
   color: #633c42;
   font-size: 32px;
   font-size: 2rem;
+}
+
+.header-accueil {
+  position: relative;
+}
+
+.header-accueil__video {
+  width: 100%;
+}
+
+.header-accueil__logo {
+  top: 20%;
+  position: absolute;
+  left: 50%;
+  width: 300px;
+  margin-left: -150px;
+}
+
+.form-newsletter {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 20%;
+}
+
+.form-newsletter__label {
+  color: white;
+  font-size: 19.2px;
+  font-size: 1.2rem;
+  margin-right: 9.6px;
+  margin-right: 0.6rem;
+}
+
+.form-newsletter__text {
+  background: none;
+  color: white;
+  font-size: 19.2px;
+  font-size: 1.2rem;
+  margin-right: 16px;
+  margin-right: 1rem;
+  padding: 10px 0;
+  border-bottom: 1px solid white;
+  border-width: 0 0 1px 0;
+}
+
+.form-newsletter__submit {
+  background: none;
+  border: 1px solid white;
+  padding: 10px 30px;
+  border-radius: 4px;
+  font-size: 19.2px;
+  font-size: 1.2rem;
+  color: white;
 }
 
 .hidden-title {
