@@ -499,6 +499,15 @@ h2 {
   clear: both;
 }
 
+.wrapper {
+  width: 1150px;
+  margin: 30px auto;
+}
+
+.main-column {
+  width: 66%;
+}
+
 .header-accueil {
   position: relative;
 }
@@ -562,12 +571,15 @@ h2 {
   background-color: #3f312e;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
   background-size: cover;
+  box-shadow: 0px 20px 100px rgba(0, 0, 0, 0.6) inset;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
 .accueil-nav__link:hover {
-  box-shadow: 0px 20px 100px rgba(0, 0, 0, 0.6) inset;
+  box-shadow: 0px 20px 100px rgba(0, 0, 0, 0.2) inset;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+  color: #a96747;
 }
 
 .accueil-nav__link--chevaux {
