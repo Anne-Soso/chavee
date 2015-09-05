@@ -464,12 +464,16 @@ body {
   line-height: 1.4rem;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
+  color: #382829;
 }
 
 h2 {
-  color: #857955;
-  font-size: 32px;
-  font-size: 2rem;
+  color: #68703b;
+  font-weight: 300;
+  margin: 60.8px 0px 19.2px;
+  margin: 3.8rem 0rem 1.2rem;
+  font-size: 38.4px;
+  font-size: 2.4rem;
 }
 
 .button {
@@ -579,7 +583,7 @@ h2 {
 .accueil-nav__link:hover {
   box-shadow: 0px 20px 100px rgba(0, 0, 0, 0.2) inset;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
-  color: #a96747;
+  color: #bbbbbb;
 }
 
 .accueil-nav__link--chevaux {
@@ -592,6 +596,20 @@ h2 {
 
 .accueil-nav__link--contact {
   background-image: url("img/nav1.jpg");
+}
+
+.news__title {
+  color: #674f4a;
+  font-size: 24px;
+  font-size: 1.5rem;
+  margin: 16px 0px 16px;
+  margin: 1rem 0rem 1rem;
+  font-weight: 400;
+  float: left;
+}
+
+.news__date {
+  float: right;
 }
 
 .hidden-title {

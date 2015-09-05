@@ -1,0 +1,10 @@
+.news__title{
+  color:$small-heading-color;
+  @include rem-fallback(font-size,1.5);
+  @include rem-fallback(margin,1,0,1);
+  font-weight:400;
+  float:left;
+}
+.news__date{
+  float:right;
+}
