@@ -464,7 +464,8 @@ body {
   line-height: 1.4rem;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  color: #382829;
+  background: white;
+  color: #616161;
 }
 
 h2 {
@@ -474,6 +475,11 @@ h2 {
   margin: 3.8rem 0rem 1.2rem;
   font-size: 38.4px;
   font-size: 2.4rem;
+}
+
+a {
+  color: #838c48;
+  text-decoration: none;
 }
 
 .button {
@@ -566,8 +572,8 @@ h2 {
   float: left;
   text-align: center;
   color: white;
-  font-size: 48px;
-  font-size: 3rem;
+  font-size: 32px;
+  font-size: 2rem;
   padding: 100px;
   width: 33.3333%;
   height: 230px;
@@ -602,14 +608,47 @@ h2 {
   color: #674f4a;
   font-size: 24px;
   font-size: 1.5rem;
-  margin: 16px 0px 16px;
-  margin: 1rem 0rem 1rem;
-  font-weight: 400;
-  float: left;
+  margin: 35.2px 0px 8px;
+  margin: 2.2rem 0rem 0.5rem;
+  font-weight: 900;
 }
 
 .news__date {
-  float: right;
+  color: #888888;
+  padding: 5px;
+  margin: 35.2px 0px 0px;
+  margin: 2.2rem 0rem 0rem;
+}
+
+.news__author {
+  float: left;
+  color: #888888;
+}
+
+.news__text {
+  margin: 9.6px 0px 32px;
+  margin: 0.6rem 0rem 2rem;
+  font-family: Georgia,serif;
+}
+
+.news__footer {
+  text-align: center;
+}
+
+.news__number-comments {
+  font-size: 12.8px;
+  font-size: 0.8rem;
+  margin-right: 16px;
+  margin-right: 1rem;
+  padding: 7px 20px;
+  color: #838c48;
+}
+
+.news__comment-link {
+  font-size: 12.8px;
+  font-size: 0.8rem;
+  padding: 7px 20px;
+  color: #838c48;
 }
 
 .hidden-title {

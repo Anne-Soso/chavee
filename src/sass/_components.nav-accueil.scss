@@ -3,7 +3,7 @@
   float: left;
   text-align: center;
   color: $button-text-color;
-  @include rem-fallback(font-size,3);
+  @include rem-fallback(font-size,2);
   padding: 100px;
   width: 33.3333%;
   height:230px;

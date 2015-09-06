@@ -1,10 +1,39 @@
 .news__title{
   color:$small-heading-color;
   @include rem-fallback(font-size,1.5);
-  @include rem-fallback(margin,1,0,1);
-  font-weight:400;
-  float:left;
+  @include rem-fallback(margin,2.2,0,0.5);
+  font-weight:900;
+
 }
 .news__date{
-  float:right;
+  color: $discrete-color;
+  padding:5px;
+  @include rem-fallback(margin,2.2,0,0);
+}
+.news__author{
+  float:left;
+  color:$discrete-color;
+}
+.news__author-link{
+
+}
+.news__text{
+  @include rem-fallback(margin, 0.6,0,2);
+  font-family: Georgia,serif;
+}
+.news__footer{
+  text-align:center;
+
+}
+.news__number-comments{
+  @include rem-fallback(font-size, 0.8);
+  @include rem-fallback(margin-right, 1);
+  padding:7px 20px;
+  color:$link-color;
+
+}
+.news__comment-link{
+  @include rem-fallback(font-size, 0.8);
+  padding:7px 20px;
+  color:$link-color;
 }
