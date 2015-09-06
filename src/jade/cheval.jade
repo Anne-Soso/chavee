@@ -1,0 +1,18 @@
+extends includes/layout.jade
+block title
+  title Thalys de la Chavée
+block header
+  include includes/header.jade
+block content
+  div.marge-fixed.wrapper
+    h1.pres-cheval__nom Thalys de la Chavée
+    section.pres-cheval
+      h2(role="heading" aria-level="2").hidden-title Description générale
+      div.pres-cheval__galerie
+      div.pres-cheval__description  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore harum ea accusamus, voluptas at aliquid repudiandae expedita adipisci nostrum itaque modi fugiat quis perspiciatis numquam sit eius illum quod, quas!
+    section.carac-cheval
+      h2(role="heading" aria-level="2").hidden-title Caractéristiques et généalogie
+      include includes/garrot-cheval.svg
+      
+      
+      

@@ -1,1 +1,1 @@
-!function(a){"user strict";a(function(){})}(jQuery);
+!function(a){"user strict";a(function(){a(".chevaux__item+.chevaux__item .chevaux__right").css("opacity","0"),a(window).scroll(function(){a(".chevaux__item+.chevaux__item .chevaux__right").each(function(b){var c=a(this).offset().top+a(this).outerHeight(),d=a(window).scrollTop()+a(window).height();d>c&&a(this).animate({opacity:"1"},500)})})})}(jQuery);

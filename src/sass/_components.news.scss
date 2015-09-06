@@ -1,3 +1,6 @@
+.news{
+  @include rem-fallback(padding-bottom,5);
+}
 .news__title{
   color:$small-heading-color;
   @include rem-fallback(font-size,1.5);

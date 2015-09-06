@@ -468,6 +468,17 @@ body {
   color: #616161;
 }
 
+h1 {
+  color: #68703b;
+  font-style: italic;
+  font-family: "Playfair Display", serif;
+  font-size: 33.6px;
+  font-size: 2.1rem;
+  padding: 32px 0px 0px 0px;
+  padding: 2rem 0rem 0rem 0rem;
+  font-weight: 700;
+}
+
 h2 {
   color: #68703b;
   font-weight: 300;
@@ -609,6 +620,11 @@ a {
   background-image: url("img/nav1.jpg");
 }
 
+.news {
+  padding-bottom: 80px;
+  padding-bottom: 5rem;
+}
+
 .news__title {
   color: #674f4a;
   font-size: 24px;
@@ -694,7 +710,7 @@ a {
 
 .chevaux__left {
   background: url("img/fondsilhouette2.jpg");
-  width: 55%;
+  width: 60%;
   background-size: cover;
   padding: 100px;
   float: left;
@@ -716,7 +732,7 @@ a {
 
 .chevaux__right {
   float: right;
-  width: 45%;
+  width: 40%;
   padding: 100px;
 }
 
@@ -724,6 +740,9 @@ a {
   color: #6b524d;
   font-style: italic;
   font-family: "Playfair Display", serif;
+  line-height: 1.2;
+  font-size: 33.6px;
+  font-size: 2.1rem;
   font-weight: 700;
 }
 

@@ -2,18 +2,24 @@
     "user strict";
 
     $( function() {
-        // Call my function here
-        // $('.chevaux__item+.chevaux__item').slideUp();
-        // var current=0;
-        // if($('.chevaux').length)
-        // $(window).one('scroll',function(){
-        //   console.log('lol');
-        //   $('.chevaux__item').eq(current).slideUp();
-        //   current++;
-        //   $('.chevaux__item').eq(current).slideDown();
-        //   $(window).off('scroll');
-        //
-        // });
+        $('.chevaux__item+.chevaux__item .chevaux__right').css('opacity','0');
+        $(window).scroll( function(){
+
+            /* Check the location of each desired element */
+            $('.chevaux__item+.chevaux__item .chevaux__right').each( function(i){
+                var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+                var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+                /* If the object is completely visible in the window, fade it it */
+                if( bottom_of_window > bottom_of_object ){
+
+                    $(this).animate({'opacity':'1'},500);
+
+                }
+
+            });
+
+        });
     } );
 
 } ) (jQuery);

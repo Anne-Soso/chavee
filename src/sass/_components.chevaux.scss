@@ -1,6 +1,6 @@
 .chevaux__left{
   background:url('img/fondsilhouette2.jpg');
-  width:55%;
+  width:60%;
   background-size: cover;
   padding:100px;
   float:left;
@@ -18,13 +18,15 @@
 }
 .chevaux__right{
   float:right;
-  width:45%;
+  width:40%;
   padding:100px;
 }
 .chevaux__nom{
   color: $cheval-name;
   font-style:italic;
   font-family: $font-title-article,serif;
+  line-height:1.2;
+  @include rem-fallback(font-size,2.1);
   font-weight:700;
 }
 .chevaux__item{

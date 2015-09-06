@@ -1,3 +1,11 @@
+h1{
+  color: #68703b;
+  font-style:italic;
+  font-family: $font-title-article,serif;
+  @include rem-fallback(font-size,2.1);
+  @include rem-fallback(padding,2,0,0,0);
+  font-weight:700;
+}
 h2{
   color : $heading-color;
   font-weight:300;
