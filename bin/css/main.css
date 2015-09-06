@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,300italic,400italic,500,500italic,700,700italic,100italic);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,700,700italic|Playfair+Display:400,700,700italic,900,900italic,400italic);
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Set default font family to sans-serif.
@@ -514,6 +514,11 @@ a {
   margin: 0 auto;
 }
 
+.marge-fixed {
+  margin-top: 80px;
+  margin-top: 5rem;
+}
+
 .main-column {
   width: 66%;
 }
@@ -685,6 +690,59 @@ a {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
   color: #9aa458;
   background: #3f312e;
+}
+
+.chevaux__left {
+  background: url("img/fondsilhouette2.jpg");
+  width: 55%;
+  background-size: cover;
+  padding: 100px;
+  float: left;
+}
+
+.chevaux__item:nth-child(2n+0) .chevaux__left {
+  background: url("img/fondsilhouette1.jpg");
+}
+
+.chevaux__item:nth-child(4n+0) .chevaux__left {
+  background: url("img/fondsilhouette3.jpg");
+}
+
+.chevaux__silhouette {
+  width: 450px;
+  margin: auto;
+  display: block;
+}
+
+.chevaux__right {
+  float: right;
+  width: 45%;
+  padding: 100px;
+}
+
+.chevaux__nom {
+  color: #6b524d;
+  font-style: italic;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+}
+
+.chevaux__item:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.chevaux__desc {
+  margin: 16px 0px;
+  margin: 1rem 0rem;
+  line-height: 28.8px;
+  line-height: 1.8rem;
+}
+
+.chevaux__plus {
+  color: #9aa458;
+  display: inline-block;
 }
 
 .hidden-title {

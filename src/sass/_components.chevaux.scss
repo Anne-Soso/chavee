@@ -1,0 +1,40 @@
+.chevaux__left{
+  background:url('img/fondsilhouette2.jpg');
+  width:55%;
+  background-size: cover;
+  padding:100px;
+  float:left;
+}
+.chevaux__item:nth-child(2n+0) .chevaux__left{
+    background:url('img/fondsilhouette1.jpg');
+}
+.chevaux__item:nth-child(4n+0) .chevaux__left{
+    background:url('img/fondsilhouette3.jpg');
+}
+.chevaux__silhouette{
+  width:450px;
+  margin:auto;
+  display:block;
+}
+.chevaux__right{
+  float:right;
+  width:45%;
+  padding:100px;
+}
+.chevaux__nom{
+  color: $cheval-name;
+  font-style:italic;
+  font-family: $font-title-article,serif;
+  font-weight:700;
+}
+.chevaux__item{
+  @include clearfix();
+}
+.chevaux__desc{
+  @include rem-fallback(margin,1,0);
+  @include rem-fallback(line-height, 1.8);
+}
+.chevaux__plus{
+  color:#9aa458;
+  display:inline-block;
+}

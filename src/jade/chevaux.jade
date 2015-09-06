@@ -4,8 +4,26 @@ block title
 block header
   include includes/header.jade
 block content
-  section.chevaux
-    h1.heading Les Juments
+  section.chevaux.marge-fixed
+    h1.hidden-title Liste des Juments
     div.chevaux__item
-      div.chevaux__silhouette
-      div.chevaux__description
+      div.chevaux__left
+        img(src="img/silhouette1.png").chevaux__silhouette
+      div.chevaux__right
+        h2(role="heading" aria-level="2").chevaux__nom Thalys de la Chavée
+        p.chevaux__desc  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe minus, placeat voluptatum accusantium, eius doloremque id minima explicabo iure et perspiciatis amet ad veritatis velit voluptatibus voluptates asperiores esse, totam!
+        a(href="#").chevaux__plus.button Voir plus
+    div.chevaux__item
+      div.chevaux__left
+        img(src="img/silhouette1.png").chevaux__silhouette
+      div.chevaux__right
+        h2(role="heading" aria-level="2").chevaux__nom Havanne de la Chavée
+        p.chevaux__desc  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe minus, placeat voluptatum accusantium, eius doloremque id minima explicabo iure et perspiciatis amet ad veritatis velit voluptatibus voluptates asperiores esse, totam!
+        a(href="#").chevaux__plus.button Voir plus
+    div.chevaux__item
+      div.chevaux__left
+        img(src="img/silhouette1.png").chevaux__silhouette
+      div.chevaux__right
+        h2(role="heading" aria-level="2").chevaux__nom Galatée de la Chavée
+        p.chevaux__desc  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe minus, placeat voluptatum accusantium, eius doloremque id minima explicabo iure et perspiciatis amet ad veritatis velit voluptatibus voluptates asperiores esse, totam!
+        a(href="#").chevaux__plus.button Voir plus
