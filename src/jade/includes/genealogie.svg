@@ -1,0 +1,12 @@
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="401.25px" height="227.5px" viewBox="0 0 401.25 227.5" enable-background="new 0 0 401.25 227.5" xml:space="preserve">
+<polyline fill="#FFFFFF" stroke="#9D9C9C" stroke-width="3" stroke-miterlimit="10" points="75.625,56.25 75.625,110.625
+	196.875,110.625 318.125,110.625 318.125,56.25 "/>
+<line fill="#FFFFFF" stroke="#9D9C9C" stroke-width="3" stroke-miterlimit="10" x1="196.875" y1="164.375" x2="196.875" y2="110.625"/>
+<g>
+	<text transform="matrix(1 0 0 1 21.252 50.625)" fill="#785C56" font-size="30.555">Nom Père </text>
+</g>
+<text transform="matrix(1 0 0 1 252.416 50.625)" fill="#785C56"  font-size="30.555">Nom Mère </text>
+<rect x="72.5" y="167.5" fill="none" width="248.75" height="66.875"/>
+<text transform="matrix(1 0 0 1 156.5889 189.1934)" fill="#664E4C"  font-size="30.555">Thalys</text>
+</svg>

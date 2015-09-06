@@ -534,6 +534,14 @@ a {
   width: 66%;
 }
 
+.egal-column {
+  width: 50%;
+}
+
+.a-little-more-column {
+  width: 55%;
+}
+
 .header-accueil {
   position: relative;
 }
@@ -676,6 +684,7 @@ a {
   background: #5a4642;
   width: 100%;
   position: fixed;
+  z-index: 100;
   top: 0;
   left: 0;
 }
@@ -762,6 +771,74 @@ a {
 .chevaux__plus {
   color: #9aa458;
   display: inline-block;
+}
+
+.cheval-galerie {
+  overflow: hidden;
+  position: relative;
+  background-color: #cbcbcb;
+  height: 450px;
+}
+.cheval-galerie img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  z-index: 0;
+  margin: auto;
+  cursor: pointer;
+}
+
+.cheval-galerie__next {
+  display: inline-block;
+  z-index: 90;
+  text-indent: -8000px;
+  position: absolute;
+  top: 45%;
+  right: 16px;
+  right: 1rem;
+  width: 50px;
+  height: 50px;
+  background: url("img/fleche-droite.png");
+}
+
+.cheval-galerie__previous {
+  display: inline-block;
+  z-index: 90;
+  text-indent: -8000px;
+  position: absolute;
+  top: 45%;
+  left: 16px;
+  left: 1rem;
+  width: 50px;
+  height: 50px;
+  background: url("img/fleche-gauche.png");
+}
+
+.full-galerie {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+.full-galerie img {
+  max-height: none;
+}
+
+.full-galerie__ferme {
+  display: none;
+  font-size: 32px;
+  font-size: 2rem;
+  top: 16px;
+  top: 1rem;
+  right: 16px;
+  right: 1rem;
+  padding: 11.2px;
+  padding: 0.7rem;
+  color: white;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .hidden-title {

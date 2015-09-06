@@ -8,11 +8,18 @@ block content
     h1.pres-cheval__nom Thalys de la Chavée
     section.pres-cheval
       h2(role="heading" aria-level="2").hidden-title Description générale
-      div.pres-cheval__galerie
+      div.cheval-galerie.a-little-more-column
+        a(href="#" title="Voir l'image suivante").cheval-galerie__next Image suivante
+        a(href="#" title="Voir l'image précédente").cheval-galerie__previous Image précédente
+        a(href="#" title="fermer le mode plein écran").full-galerie__ferme x
+        img(src="img/thalys01.jpg" alt="")
+        img(src="img/thalys02.jpg" alt="")
+        img(src="img/thalys03.jpg" alt="")
       div.pres-cheval__description  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore harum ea accusamus, voluptas at aliquid repudiandae expedita adipisci nostrum itaque modi fugiat quis perspiciatis numquam sit eius illum quod, quas!
     section.carac-cheval
       h2(role="heading" aria-level="2").hidden-title Caractéristiques et généalogie
       include includes/garrot-cheval.svg
+      include includes/genealogie.svg
       
       
       
