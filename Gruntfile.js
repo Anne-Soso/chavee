@@ -19,7 +19,8 @@ module.exports = function( grunt ) {
 					},
 				},
 				"files": { // - Add jade's fill to compile here
-					"bin/index.html": "src/jade/main.jade"
+					"bin/index.html": "src/jade/main.jade",
+					"bin/chevaux.html" : "src/jade/chevaux.jade"
 				}
 			}
 		},
