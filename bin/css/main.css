@@ -669,7 +669,7 @@ a {
   position: relative;
   padding: 100px;
   width: 33.3333%;
-  height: 230px;
+  height: 250px;
   text-decoration: none;
   background-color: #3f312e;
   background-size: 100%;
@@ -713,7 +713,7 @@ a {
 }
 
 .accueil-nav {
-  border-top: 25px solid #3A2B28;
+  border-top: 25px solid #3f312e;
 }
 
 .accueil-nav__link--chevaux {
@@ -791,7 +791,7 @@ a {
 }
 
 .page-head {
-  background: #5a4642;
+  background: #3f312e;
   width: 100%;
   position: fixed;
   z-index: 100;

@@ -4,7 +4,7 @@
   position:relative;
   padding: 100px;
   width: 33.3333%;
-  height:230px;
+  height:250px;
   text-decoration:none;
   background-color: $background-color;
   background-size:100%;
@@ -30,7 +30,6 @@
   }
 }
 .accueil-nav__bouton{
-  //background:$background-color;
   @include rem-fallback(font-size,1.8);
   @include rem-fallback(padding,0.7);
   text-align: center;
@@ -41,7 +40,7 @@
   z-index:90;
 }
 .accueil-nav{
-  border-top: 25px solid #3A2B28;
+  border-top: 25px solid $background-nav;
 }
 
 .accueil-nav__link--chevaux{
