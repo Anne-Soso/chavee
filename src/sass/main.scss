@@ -11,6 +11,7 @@
 @import "generic.reset";
 @import "generic.box-sizing";
 
+@import "base.forms";
 @import "base.page";
 @import "base.headings";
 @import "base.paragraphs";
@@ -33,5 +34,6 @@
 @import "components.cheval-galerie";
 @import "components.pres-cheval";
 @import "components.carac-cheval";
+@import "components.comment";
 
 @import "trumps.hidden";

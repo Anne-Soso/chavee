@@ -7,16 +7,26 @@ block header
 block content
   div.wrapper
     section.news.main-column
-      h2(role="heading" aria-level="2").heading 
-        a(href="article.html") Actualités de l'élevage
+      h2(role="heading" aria-level="2").heading Actualités de l'élevage
       article.news__item 
-        h3(role="heading" aria-level="3").news__title Ouverture du site
+        a(href="article.html")
+          h3(role="heading" aria-level="3").news__title Ouverture du site
         p.news__author par
           a(href="#").news__author-link &nbsp;Anne-Sophie, 
         time(datetime="2015-09-05").news__date  le 5 septembre 2015
-        div.news__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a urna justo. Etiam orci neque, finibus vitae tempor vitae, porta ut odio. In vitae condimentum eros. Nulla malesuada vestibulum auctor. Aliquam imperdiet pulvinar magna a vestibulum. Etiam mi erat, ultrices at nulla a, placerat auctor massa. Nam pulvinar, lorem eu porta cursus, quam ante viverra ante, sed porta enim eros non leo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam viverra mauris vitae quam blandit, et aliquet arcu laoreet. Proin vel diam accumsan, consectetur mauris nec, aliquet metus. Nunc dictum ligula et ligula viverra lobortis. Curabitur dignissim massa quis tellus mattis, sed egestas dolor hendrerit.
+        div.news__text Ce site est encore en construction et n'est à vrai dire pas encore ouvert. On peut cependant s'y faire déjà une idée du rendu final qu'il aura. Beaucoup de choses sont à faire encore.
         div.news__footer
-          a(href="article.html").news__number-comments.button 5 commentaires
+          a(href="article.html").news__number-comments.button 3 commentaires
           a(href="article.html").news__comment-link.button Commenter
+      article.news__item 
+        a(href="article.html")
+          h3(role="heading" aria-level="3").news__title Une nouvelle arrivante
+        p.news__author par
+          a(href="#").news__author-link &nbsp;Anne-Sophie, 
+        time(datetime="2015-09-05").news__date  le 5 septembre 2015
+        div.news__text Il y a deux semaines environ, l'élevage de la Chavée a vu venir une nouvelle arrivante dans ses "pensionnaires". En effet, Sibelle, une jeune et jolie Franche-Montagne a désormais sa place dans les boxes de l'élevage. De belles balades à cheval, ou en attelage en perspective !
+        div.news__footer
+          a(href="article.html#nb-comments").news__number-comments.button 0 commentaire
+          a(href="article.html#comment" id="").news__comment-link.button Commenter
         
       

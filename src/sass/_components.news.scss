@@ -1,5 +1,5 @@
 .news{
-  @include rem-fallback(padding-bottom,5);
+  @include rem-fallback(padding,2.5,0,5);
 }
 .news__title{
   color:$small-heading-color;
@@ -7,6 +7,13 @@
   @include rem-fallback(margin,2.2,0,0.5);
   font-weight:900;
 
+}
+.news__title--main{
+  font-family:$font-default;
+  font-weight:300;
+  font-style:normal;
+  @include rem-fallback(margin,0,0,0.7);
+  @include rem-fallback(font-size,2);
 }
 .news__date{
   color: $discrete-color;

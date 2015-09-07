@@ -1,0 +1,37 @@
+extends includes/layout.jade
+block title
+  title Ouverture du site
+block header
+  include includes/header.jade
+block content
+  div.marge-fixed.wrapper
+    div.news.main-column
+      h1.news__title.news__title--main Ouverture du site
+      p.news__author par
+        a(href="#").news__author-link &nbsp;Anne-Sophie, 
+      time(datetime="2015-09-05").news__date  le 5 septembre 2015
+      div.news__text Ce site est encore en construction et n'est à vrai dire pas encore ouvert. On peut cependant s'y faire déjà une idée du rendu final qu'il aura. Beaucoup de choses sont à faire encore.
+      section.comment 
+        h2(role="heading" id="nb-comments" aria-level="2").comment__title 3 commentaires
+        ul
+          li.comment__item
+            a(href="mailto:madame@gmail.com").comment__author Madame Jambon
+            time.comment__date Le 6 septembre 2015
+            div.comment__message  Ce site est encore en construction à ce que je vois, peut mieux faire.
+          li.comment__item
+            a(href="mailto:monsieur@gmail.com").comment__author Monsieur Banane
+            time.comment__date Le 6 septembre 2015
+            div.comment__message  Ah mais quelle bonne nouvelle, c'est tellement bien :).
+        h2(role="heading" id="comment" aria-level="2").comment__title Commenter cet article
+        form(method="post" action="#").form
+          div.form__div
+            label(for="name").form__label Votre nom 
+            input(type="text" id="name" name="name" placeholder="Entrez votre nom" required).form__text
+          div.form__div
+            label(for="email").form__label Votre adresse email
+            input(type="text" id="email" name="email" placeholder="Entrez votre adresse email").form__email
+          div.form__div
+            label(for="message").form__label Votre message
+            textarea(id="message" name="message").form__area
+          input(type="submit" value="Envoyer").form__submit.button
+              
