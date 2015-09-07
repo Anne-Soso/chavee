@@ -23,6 +23,7 @@
 @import "objects.wrappers";
 @import "objects.marge-fixed";
 @import "objects.columns";
+@import "objects.inline-block";
 
 @import "components.header-accueil";
 @import "components.nav-accueil";
@@ -30,5 +31,7 @@
 @import "components.page-head";
 @import "components.chevaux";
 @import "components.cheval-galerie";
+@import "components.pres-cheval";
+@import "components.carac-cheval";
 
 @import "trumps.hidden";

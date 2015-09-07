@@ -6,7 +6,8 @@ block header
 block content
   div.marge-fixed.wrapper
     h1.pres-cheval__nom Thalys de la Chavée
-    section.pres-cheval
+    p.pres-cheval__race Jument SBS
+    section.pres-cheval.clearfix
       h2(role="heading" aria-level="2").hidden-title Description générale
       div.cheval-galerie.a-little-more-column
         a(href="#" title="Voir l'image suivante").cheval-galerie__next Image suivante
@@ -15,11 +16,15 @@ block content
         img(src="img/thalys01.jpg" alt="")
         img(src="img/thalys02.jpg" alt="")
         img(src="img/thalys03.jpg" alt="")
-      div.pres-cheval__description  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore harum ea accusamus, voluptas at aliquid repudiandae expedita adipisci nostrum itaque modi fugiat quis perspiciatis numquam sit eius illum quod, quas!
+      div.pres-cheval__desc.a-little-less-column  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore harum ea accusamus, voluptas at aliquid repudiandae expedita adipisci nostrum itaque modi fugiat quis perspiciatis numquam sit eius illum quod, quas!
     section.carac-cheval
       h2(role="heading" aria-level="2").hidden-title Caractéristiques et généalogie
-      include includes/garrot-cheval.svg
-      include includes/genealogie.svg
+      div.a-little-more-column.inline-block
+        h3(role="heading" aria-level="3").hidden-title Arbre généalogique
+        include includes/genealogie.svg
+      div.a-little-less-column.inline-block
+        h3(role="heading" aria-level="3").hidden-title Taille au garrot
+        include includes/garrot-cheval.svg
       
       
       

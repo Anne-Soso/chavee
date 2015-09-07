@@ -542,6 +542,14 @@ a {
   width: 55%;
 }
 
+.a-little-less-column {
+  width: 44%;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
 .header-accueil {
   position: relative;
 }
@@ -777,6 +785,7 @@ a {
   overflow: hidden;
   position: relative;
   background-color: #cbcbcb;
+  float: left;
   height: 450px;
 }
 .cheval-galerie img {
@@ -839,6 +848,49 @@ a {
   color: white;
   position: fixed;
   background: rgba(0, 0, 0, 0.4);
+}
+
+.pres-cheval__nom {
+  text-align: center;
+  font-size: 41.6px;
+  font-size: 2.6rem;
+  padding: 48px 0px 16px;
+  padding: 3rem 0rem 1rem;
+}
+
+.pres-cheval__race {
+  text-align: center;
+  padding: 0px 0px 40px;
+  padding: 0rem 0rem 2.5rem;
+  font-size: 19.2px;
+  font-size: 1.2rem;
+}
+
+.pres-cheval__desc {
+  float: right;
+  font-family: Georgia;
+  padding: 32px;
+  padding: 2rem;
+  font-size: 18.4px;
+  font-size: 1.15rem;
+}
+
+.carac-cheval {
+  margin: 32px 0px;
+  margin: 2rem 0rem;
+}
+
+.carac-cheval__garrot {
+  width: 70%;
+  display: block;
+  margin: auto;
+}
+
+.carac-cheval__gen {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 64px;
+  margin-bottom: 4rem;
 }
 
 .hidden-title {

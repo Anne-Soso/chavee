@@ -1,0 +1,17 @@
+.pres-cheval__nom{
+  text-align:center;
+  @include rem-fallback(font-size,2.6);
+  @include rem-fallback(padding,3,0,1);
+}
+.pres-cheval__race{
+  text-align:center;
+  @include rem-fallback(padding,0,0,2.5);
+  @include rem-fallback(font-size,1.2);
+}
+.pres-cheval__desc{
+  float:right;
+  font-family:$font-paragraph;
+  @include rem-fallback(padding,2);
+  @include rem-fallback(font-size,1.15);
+
+}
