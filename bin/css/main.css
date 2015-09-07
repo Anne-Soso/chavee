@@ -666,26 +666,50 @@ a {
 .accueil-nav__link {
   display: block;
   float: left;
-  text-align: center;
-  color: white;
-  font-size: 32px;
-  font-size: 2rem;
+  position: relative;
   padding: 100px;
   width: 33.3333%;
   height: 230px;
   text-decoration: none;
   background-color: #3f312e;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-  background-size: cover;
-  box-shadow: 0px 20px 100px rgba(0, 0, 0, 0.6) inset;
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
+  background-size: 100%;
+  background-position: center center;
+  box-shadow: 0px 20px 100px rgba(0, 0, 0, 0.7) inset;
+  -webkit-transition: all 0.8s ease-in-out;
+  -moz-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
 }
 .accueil-nav__link:hover {
-  box-shadow: 0px 20px 100px rgba(0, 0, 0, 0.2) inset;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
-  color: #bbbbbb;
+  background-size: 120%;
+}
+.accueil-nav__link:hover:before {
+  background-color: rgba(0, 0, 0, 0.35);
+}
+.accueil-nav__link:before {
+  content: " ";
+  display: block;
+  -webkit-transition: all 0.8s ease-in-out;
+  -moz-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.accueil-nav__bouton {
+  font-size: 28.8px;
+  font-size: 1.8rem;
+  padding: 11.2px;
+  padding: 0.7rem;
+  text-align: center;
+  color: white;
+  border-radius: 0px;
+  border-width: 1px 0px;
+  position: relative;
+  z-index: 90;
 }
 
 .accueil-nav {
@@ -804,19 +828,20 @@ a {
 }
 
 .chevaux__left {
-  background: url("img/fondsilhouette2.jpg");
+  background-image: url("img/fondsilhouette2.jpg");
   width: 60%;
+  background-attachment: fixed;
   background-size: cover;
   padding: 100px;
   float: left;
 }
 
 .chevaux__item:nth-child(2n+0) .chevaux__left {
-  background: url("img/fondsilhouette1.jpg");
+  background-image: url("img/fondsilhouette1.jpg");
 }
 
-.chevaux__item:nth-child(4n+0) .chevaux__left {
-  background: url("img/fondsilhouette3.jpg");
+.chevaux__item:nth-child(3n+0) .chevaux__left {
+  background-image: url("img/fondsilhouette3.jpg");
 }
 
 .chevaux__silhouette {

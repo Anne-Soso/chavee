@@ -1,15 +1,16 @@
 .chevaux__left{
-  background:url('img/fondsilhouette2.jpg');
+  background-image:url('img/fondsilhouette2.jpg');
   width:60%;
+  background-attachment: fixed;
   background-size: cover;
   padding:100px;
   float:left;
 }
 .chevaux__item:nth-child(2n+0) .chevaux__left{
-    background:url('img/fondsilhouette1.jpg');
+    background-image:url('img/fondsilhouette1.jpg');
 }
-.chevaux__item:nth-child(4n+0) .chevaux__left{
-    background:url('img/fondsilhouette3.jpg');
+.chevaux__item:nth-child(3n+0) .chevaux__left{
+    background-image:url('img/fondsilhouette3.jpg');
 }
 .chevaux__silhouette{
   width:450px;

@@ -1,23 +1,44 @@
 .accueil-nav__link{
   display:block;
   float: left;
-  text-align: center;
-  color: $button-text-color;
-  @include rem-fallback(font-size,2);
+  position:relative;
   padding: 100px;
   width: 33.3333%;
   height:230px;
   text-decoration:none;
   background-color: $background-color;
-  text-shadow:1px 1px 1px rgba(0,0,0,0.2);
-  background-size:cover;
-  box-shadow:0px 20px 100px rgba(0,0,0,0.6) inset;
-  @include transition(all 0.4s ease-in-out);
+  background-size:100%;
+  background-position: center center;
+  box-shadow:0px 20px 100px rgba(0,0,0,0.7) inset;
+  @include transition(all 0.8s ease-in-out);
   &:hover{
-    box-shadow:0px 20px 100px rgba(0,0,0,0.2) inset;
-    text-shadow:1px 1px 1px rgba(0,0,0,0.8);
-    color:#bbbbbb;
+    background-size: 120%;
+    &:before{
+      background-color: rgba(0,0,0,0.35);
+    }
   }
+  &:before{
+    content:" ";
+    display:block;
+    @include transition(all 0.8s ease-in-out);
+    background-color: rgba(0,0,0,0);
+    width:100%;
+    height:100%;
+    position:absolute;
+    left:0px;
+    top:0px;
+  }
+}
+.accueil-nav__bouton{
+  //background:$background-color;
+  @include rem-fallback(font-size,1.8);
+  @include rem-fallback(padding,0.7);
+  text-align: center;
+  color: $button-text-color;
+  border-radius:0px;
+  border-width:1px 0px;
+  position:relative;
+  z-index:90;
 }
 .accueil-nav{
   border-top: 25px solid #3A2B28;
