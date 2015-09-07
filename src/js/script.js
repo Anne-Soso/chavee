@@ -2,11 +2,11 @@
     "user strict";
 
     $( function() {
-        $('.chevaux__item+.chevaux__item .chevaux__right').css('opacity','0');
+        $('.chevaux__item+.chevaux__item .chevaux__silhouette').css('opacity','0');
         $(window).scroll( function(){
 
             /* Check the location of each desired element */
-            $('.chevaux__item+.chevaux__item .chevaux__right').each( function(i){
+            $('.chevaux__item+.chevaux__item .chevaux__silhouette').each( function(i){
                 var bottom_of_object = $(this).offset().top + $(this).outerHeight();
                 var bottom_of_window = $(window).scrollTop() + $(window).height();
 
