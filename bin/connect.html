@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Nos Chevaux</title>
+    <title>Connexion à l'interface d'administration</title>
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
@@ -93,30 +93,20 @@
         </nav>
       </div>
     </header>
-    <h1 class="hidden-title">Liste des Juments</h1>
-    <section class="chevaux marge-fixed">
-      <div class="chevaux__item">
-        <div class="chevaux__left"><a href="cheval.html"><img src="img/silhouette1.png" alt="Voir la fiche de Thalys" class="chevaux__silhouette"></a></div>
-        <div class="chevaux__right"><a href="cheval.html">
-            <h2 role="heading" aria-level="2" class="chevaux__nom">Thalys de la Chavée</h2></a>
-          <p class="chevaux__desc"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe minus, placeat voluptatum accusantium, eius doloremque id minima explicabo iure et perspiciatis amet ad veritatis velit voluptatibus voluptates asperiores esse, totam!</p><a href="cheval.html" class="chevaux__plus button">Voir plus</a>
+    <div class="marge-fixed small-wrapper">
+      <h1>Connexion à l'interface</h1>
+      <form method="post" action="admin.html" class="form">
+        <div class="form__div">
+          <label for="username" class="form__label">Identifiant</label>
+          <input id="username" type="text" name="username" placeholder="Entrez votre identifiant" required class="form__text">
         </div>
-      </div>
-      <div class="chevaux__item">
-        <div class="chevaux__left"><a href="cheval.html"><img src="img/silhouette2.png" alt="Voir la fiche de Havane" class="chevaux__silhouette"></a></div>
-        <div class="chevaux__right"><a href="cheval.html">
-            <h2 role="heading" aria-level="2" class="chevaux__nom">Havane de la Chavée</h2></a>
-          <p class="chevaux__desc"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe minus, placeat voluptatum accusantium, eius doloremque id minima explicabo iure et perspiciatis amet ad veritatis velit voluptatibus voluptates asperiores esse, totam!</p><a href="cheval.html" class="chevaux__plus button">Voir plus</a>
+        <div class="form__div">
+          <label for="password" class="form__label">Mot de passe</label>
+          <input id="password" type="password" name="password" placeholder="Entrez votre mot de passe" required class="form__text">
         </div>
-      </div>
-      <div class="chevaux__item">
-        <div class="chevaux__left"><a href="cheval.html"><img src="img/silhouette1.png" alt="Voir la fiche de Galatée" class="chevaux__silhouette"></a></div>
-        <div class="chevaux__right"><a href="cheval.html">
-            <h2 role="heading" aria-level="2" class="chevaux__nom">Galatée de la Chavée</h2></a>
-          <p class="chevaux__desc"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe minus, placeat voluptatum accusantium, eius doloremque id minima explicabo iure et perspiciatis amet ad veritatis velit voluptatibus voluptates asperiores esse, totam!</p><a href="cheval.html" class="chevaux__plus button">Voir plus</a>
-        </div>
-      </div>
-    </section>
+        <input type="submit" value="Se connecter" class="button form__submit">
+      </form>
+    </div>
     <script src="js/jquery.js"></script>
     <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDHJ3p-sn1Y5tJGrzH9MF5cbR5sdsDmhfg&amp;sensor=false"></script>
     <script src="js/script-min.js"></script>

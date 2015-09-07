@@ -479,6 +479,11 @@ html {
   background: none;
   border: 1px solid #d7d7d9;
   border-width: 0 0 1px 0;
+  font-size: 17.6px;
+  font-size: 1.1rem;
+  padding-left: 16px;
+  padding-left: 1rem;
+  color: #68703b;
   display: block;
   width: 100%;
 }
@@ -568,6 +573,11 @@ a {
 
 .wrapper {
   max-width: 1250px;
+  margin: 0 auto;
+}
+
+.small-wrapper {
+  max-width: 600px;
   margin: 0 auto;
 }
 
@@ -1014,6 +1024,17 @@ a {
 .adresse__postale {
   margin: 16px;
   margin: 1rem;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 48px;
+  margin-top: 3rem;
+}
+
+.footer__connect {
+  font-size: 12.8px;
+  font-size: 0.8rem;
 }
 
 .hidden-title {

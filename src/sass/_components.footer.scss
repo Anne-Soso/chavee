@@ -1,0 +1,7 @@
+.footer{
+  text-align:center;
+  @include rem-fallback(margin-top,3);
+}
+.footer__connect{
+  @include rem-fallback(font-size,0.8);
+}

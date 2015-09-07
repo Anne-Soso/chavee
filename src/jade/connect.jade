@@ -1,0 +1,17 @@
+extends includes/layout.jade
+block title
+  title Connexion à l'interface d'administration
+block header
+  include includes/header.jade
+block content
+  div.marge-fixed.small-wrapper
+    h1 Connexion à l'interface
+    form(method="post" action="admin.html").form
+      div.form__div
+        label(for="username").form__label Identifiant
+        input(id="username" type="text" name="username" placeholder="Entrez votre identifiant" required).form__text
+      div.form__div
+        label(for="password").form__label Mot de passe
+        input(id="password" type="password" name="password" placeholder="Entrez votre mot de passe" required).form__text
+      input(type="submit" value="Se connecter").button.form__submit 
+    

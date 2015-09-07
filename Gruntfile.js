@@ -23,7 +23,9 @@ module.exports = function( grunt ) {
 					"bin/chevaux.html" : "src/jade/chevaux.jade",
 					"bin/cheval.html" : "src/jade/cheval.jade",
 					"bin/article.html" : "src/jade/article.jade",
-					"bin/contact.html" : "src/jade/contact.jade"
+					"bin/contact.html" : "src/jade/contact.jade",
+					"bin/connect.html" : "src/jade/connect.jade",
+					"bin/admin.html" : "src/jade/admin.jade"
 				}
 			}
 		},
