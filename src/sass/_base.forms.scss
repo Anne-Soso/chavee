@@ -31,6 +31,8 @@
   width:100%;
   @include rem-fallback(height,5);
   display:block;
+  @include rem-fallback(padding-left,1);
+  color:$input-color;
   &:focus{
     border-color:#9aa458;
   }
