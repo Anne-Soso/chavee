@@ -1,0 +1,19 @@
+.content-admin{
+  width:83%;
+  position:fixed;
+  top:0;
+  right:0;
+  height:100%;
+  overflow:auto;
+  @include rem-fallback(padding,0,2);
+}
+.content-admin__back-home{
+  position:absolute;
+  @include rem-fallback(right,3);
+  @include rem-fallback(font-size,0.9);
+  top:30px;
+}
+
+.content-admin__subtitle{
+  @include rem-fallback(font-size,1.5);
+}

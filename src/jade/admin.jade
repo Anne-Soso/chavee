@@ -1,1 +1,25 @@
 extends includes/layout.jade
+block aside
+  nav.nav-admin
+    h2(role="heading" aria-level="2").hidden-title Navigation dans l'Administration
+    a(href="admin.html") Accueil de l'admin
+    h3.nav-admin__subtitle Chevaux
+    a(href="") Tous les Chevaux
+    a(href="") Ajouter
+    h3.nav-admin__subtitle Blog
+    a(href="") Tous les Articles
+    a(href="") Ajouter
+    h3.nav-admin__subtitle Commentaires
+    a(href="") Gérer
+    h3.nav-admin__subtitle Newsletter
+    a(href="") Créer
+    a(href="") Abonnés
+    a(href="") Archives
+    h3.nav-admin__subtitle Configuration
+    a(href="") Contenus du site
+block content
+  div.content-admin
+    h1 Administration de la Chavée
+    a(href="index.html").content-admin__back-home.button Retourner sur le site
+    h2.content-admin__subtitle Les Derniers Commentaires
+    h2.content-admin__subtitle Les Derniers Articles

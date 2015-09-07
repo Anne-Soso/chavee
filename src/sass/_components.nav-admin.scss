@@ -1,0 +1,32 @@
+.nav-admin{
+  background: #dddddd;
+  position:fixed;
+  top:0;
+  left:0;
+  width:17%;
+  overflow:auto;
+  height:100%;
+  @include rem-fallback(padding,2,0,0,0);
+}
+.nav-admin__subtitle{
+  font-weight:300;
+  text-transform:uppercase;
+  @include rem-fallback(font-size,1);
+  //border-top:1px solid #c0c0c0;
+  @include rem-fallback(padding,1,1,0.6);
+  @include rem-fallback(margin-top,0.8);
+}
+.nav-admin a{
+  display:block;
+  @include rem-fallback(padding,0.5,1);
+  box-shadow:0px 10px 10px rgba(0,0,0,0.05)inset;
+  border-bottom:1px #dfdfe0;
+  background: #f1f1f1;
+  @include transition(all 0.5s ease-in-out);
+  &:hover{
+    box-shadow:0px 20px 10px rgba(0,0,0,0.1)inset;
+    background: #ffffff;
+    letter-spacing:1px;
+  }
+
+}
