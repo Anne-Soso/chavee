@@ -93,42 +93,35 @@
         </nav>
       </div>
     </header>
+    <h1>Nous contacter</h1>
     <div class="marge-fixed wrapper">
-      <div class="news main-column">
-        <h1 class="news__title news__title--main">Ouverture du site</h1>
-        <p class="news__author">par<a href="#" class="news__author-link">&nbsp;Anne-Sophie, </a></p>
-        <time datetime="2015-09-05" class="news__date"> le 5 septembre 2015</time>
-        <div class="news__text">Ce site est encore en construction et n'est à vrai dire pas encore ouvert. On peut cependant s'y faire déjà une idée du rendu final qu'il aura. Beaucoup de choses sont à faire encore.</div>
-        <section class="comment"> 
-          <h2 role="heading" id="nb-comments" aria-level="2" class="comment__title">3 commentaires</h2>
-          <ul>
-            <li class="comment__item"><a href="mailto:madame@gmail.com" class="comment__author">Madame Jambon</a>
-              <time class="comment__date">Le 6 septembre 2015</time>
-              <div class="comment__message"> Ce site est encore en construction à ce que je vois, peut mieux faire.</div>
-            </li>
-            <li class="comment__item"><a href="mailto:monsieur@gmail.com" class="comment__author">Monsieur Banane</a>
-              <time class="comment__date">Le 6 septembre 2015</time>
-              <div class="comment__message"> Ah mais quelle bonne nouvelle, c'est tellement bien :).</div>
-            </li>
-          </ul>
-          <h2 role="heading" id="comment" aria-level="2" class="comment__title">Commenter cet article</h2>
-          <form method="post" action="#" class="form">
-            <div class="form__div">
-              <label for="name" class="form__label">Votre nom </label>
-              <input type="text" id="name" name="name" placeholder="Entrez votre nom" required class="form__text">
-            </div>
-            <div class="form__div">
-              <label for="email" class="form__label">Votre adresse email</label>
-              <input type="text" id="email" name="email" placeholder="Entrez votre adresse email" class="form__email">
-            </div>
-            <div class="form__div">
-              <label for="message" class="form__label">Votre message</label>
-              <textarea id="message" name="message" class="form__area"></textarea>
-            </div>
-            <input type="submit" value="Envoyer" class="form__submit button">
-          </form>
-        </section>
-      </div>
+      <section class="a-little-more-column float-left contact">
+        <h2 role="heading" id="nb-comments" aria-level="2">Formulaire de contact</h2>
+        <form methode="post" action="#" class="form">
+          <div class="form__div">
+            <label for="name" class="form__label">Votre nom</label>
+            <input type="text" id="name" name="name" placeholder="Entrez votre nom" required class="form__text">
+          </div>
+          <div class="form__div">
+            <label for="email" class="form__label">Votre adresse email</label>
+            <input type="email" id="email" name="email" placeholder="Votre adresse email" required class="form__email">
+          </div>
+          <div class="form__div">
+            <label for="object" class="form__label">Objet de votre message</label>
+            <input type="text" id="object" name="object" placeholder="Entrez l'objet de votre message " required class="form__text">
+          </div>
+          <div class="form__div">
+            <label for="message" class="form__label">Message</label>
+            <textarea id="message" name="message" class="form__area"></textarea>
+          </div>
+          <input type="submit" value="Envoyer" class="form__submit button">
+        </form>
+      </section>
+      <section class="a-little-less-column float-right adresse">
+        <h2 role="heading" id="nb-comments" aria-level="2">Adresse</h2>
+        <address class="adresse__postale">Charly Leyder et Claudine Bordet<br>Rue des Pépinières 7<br>Ebly 6860</address>
+        <div id="contactMap" class="adresse__map"></div>
+      </section>
     </div>
     <script src="js/jquery.js"></script>
     <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDHJ3p-sn1Y5tJGrzH9MF5cbR5sdsDmhfg&amp;sensor=false"></script>

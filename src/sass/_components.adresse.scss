@@ -1,0 +1,13 @@
+.adresse{
+  @include rem-fallback(padding,0,2,2);
+}
+.contact{
+  @include rem-fallback(padding,0,0,2,0);
+}
+.adresse__map{
+  width:100%;
+  height:400px;
+}
+.adresse__postale{
+  @include rem-fallback(margin,1);
+}

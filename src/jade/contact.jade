@@ -1,0 +1,33 @@
+extends includes/layout.jade
+block title
+  title Ouverture du site
+block header
+  include includes/header.jade
+block content
+  h1 Nous contacter
+  div.marge-fixed.wrapper
+    section.a-little-more-column.float-left.contact
+      h2(role="heading" id="nb-comments" aria-level="2") Formulaire de contact
+      form(methode="post" action="#").form
+        div.form__div
+          label(for="name").form__label Votre nom
+          input(type="text" id="name" name="name" placeholder="Entrez votre nom" required ).form__text 
+        div.form__div
+          label(for="email").form__label Votre adresse email
+          input(type="email" id="email" name="email" placeholder="Votre adresse email" required).form__email
+        div.form__div
+          label(for="object").form__label Objet de votre message
+          input(type="text" id="object" name="object" placeholder="Entrez l'objet de votre message " required ).form__text
+        div.form__div
+          label(for="message").form__label Message
+          textarea(id="message" name="message").form__area
+        input(type="submit" value="Envoyer").form__submit.button 
+       
+    section.a-little-less-column.float-right.adresse
+      h2(role="heading" id="nb-comments" aria-level="2") Adresse
+      address.adresse__postale Charly Leyder et Claudine Bordet
+        br 
+        | Rue des Pépinières 7
+        br
+        | Ebly 6860
+      div(id="contactMap").adresse__map

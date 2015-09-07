@@ -67,6 +67,53 @@
           $('.full-galerie__ferme').css('display','none');
         });
 
+        var defaultPosition,
+        mapOptions,
+        gMap,
+        Geocoder,
+        gMarker,
+        image;
+        var addressRdv="Rue des Pépinières 7,6860 Ebly Belgique"
+
+        function generateGoogleMap() {
+            //Set position to Bruxelle
+            defaultPosition = new google.maps.LatLng( 50.8504500, 4.3487800 );
+            //Init mapOptions
+            mapOptions = {
+                center: defaultPosition,
+                zoom: 15,
+                disableDefaultUI: true,
+                scrollwheel: false,
+                draggable: true,
+                mapTypeId: google.maps.MapTypeId.ROADMAPx
+            };
+            imageRdv = {
+                url: 'img/marker-map.png',
+                size: new google.maps.Size( 50,50 ),
+                origin: new google.maps.Point( 0,0 ),
+                anchor: new google.maps.Point( 25, 50 )
+            };
+
+            //Init Geocoder
+            Geocoder = new google.maps.Geocoder();
+            selectedAdress();
+            //Set defaultGmap
+            gMap = new google.maps.Map( document.getElementById( "contactMap" ), mapOptions );
+        }
+        function selectedAdress() {
+           Geocoder.geocode( { 'address': addressRdv}, function(results, status) {
+               if (status == google.maps.GeocoderStatus.OK) {
+                   gMap.setCenter(results[0].geometry.location);
+                   gMarker = new google.maps.Marker( {
+                       map: gMap,
+                       position: results[0].geometry.location,
+                       icon: imageRdv
+                   } );
+               }
+           } );
+       }
+       generateGoogleMap();
+
     } );
 
 
